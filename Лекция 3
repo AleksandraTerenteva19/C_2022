@@ -1,0 +1,48 @@
+//1задание
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    int a;
+    int b;
+    cout<<"Введите А и В (B>A): ";
+    cin >> a >> b;
+    cout <<"A: "<<a<<"\nB: "<<b;
+    
+  	ofstream output ("output.txt");
+
+  	if (output.is_open()){
+  	    for(int i = a ; i <= b ; i++)
+  		output<<3 * i<<"\n";
+  	}
+  		
+  	else cout << " ";
+
+    return 0;
+}
+
+//2задание
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main()
+{
+ifstream output ("output.txt");
+int a=1;
+string slovo;
+
+if (output.is_open()){
+
+while (getline (output, slovo)){
+cout « a « " " « slovo « "\n";
+a++;
+}
+}
+else cout « " ";
+return 0;
+}
