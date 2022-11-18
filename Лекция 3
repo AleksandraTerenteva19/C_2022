@@ -32,17 +32,17 @@ using namespace std;
 
 int main()
 {
-ifstream output ("output.txt");
-int a=1;
-string slovo;
+    ifstream output ("output.txt");
+    int a=1;
+    string slovo;
 
-if (output.is_open()){
+    if (output.is_open()){
 
-while (getline (output, slovo)){
-cout « a « " " « slovo « "\n";
-a++;
-}
-}
-else cout « " ";
+    while (getline (output, slovo)){
+    cout << a << " " << slovo << "\n";
+    a++;
+        }
+    }  
+    else cout << " ";
 return 0;
 }
